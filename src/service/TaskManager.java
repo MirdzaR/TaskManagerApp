@@ -9,7 +9,7 @@ import java.util.List;
 
 public class TaskManager {
     private List<Task> tasks = new ArrayList<>();
-    private final String FILE_PATH = "tasks.csv";
+    private final String FILE_PATH = System.getProperty("task.file", "tasks.csv");
 
     // Constructor
     public TaskManager() {
@@ -83,5 +83,13 @@ public class TaskManager {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public Task getTask(int i) {
+        return tasks.get(i);
+    }
+
+    public void clearTasks() {
+        tasks.clear();
     }
 }

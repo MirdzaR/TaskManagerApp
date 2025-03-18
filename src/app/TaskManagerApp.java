@@ -50,7 +50,7 @@ public class TaskManagerApp {
         }
     }
 
-    // Validate task index when accessing tasks
+    // Validate task index when a'ccessing tasks
     private static int validateTaskIndex(Scanner scanner, int size) {
         int showSize = size > 0 ? size - 1 : 0;
         String verbaliseIndexMessage = showSize == 0 ? "0: " : ("between 0 and " + showSize + ": ");

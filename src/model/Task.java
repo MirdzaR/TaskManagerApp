@@ -27,4 +27,19 @@ public class Task {
         return (isCompleted ? "[X]" : "[ ]") + " " + title + " - " + dueDate + " - " + description;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public LocalDate getDueDate() {
+        return dueDate;
+    }
+
+    public boolean isCompleted() {
+        return isCompleted;
+    }
 }
